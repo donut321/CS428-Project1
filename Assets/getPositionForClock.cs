@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class getPosition : MonoBehaviour
+public class getPositionForClock : MonoBehaviour
 {
     public GameObject cube;
     public Light light1;
     public Light light2;
     public Light light3;
     public Light light4;
-    public Light light5;
-    public Light light6;
-    public Light light7;
     public bool isTilted = false;
     public bool changeLights = false;
 
@@ -38,18 +35,12 @@ public class getPosition : MonoBehaviour
                 light2.color = Color.white;
                 light3.color = Color.white;
                 light4.color = Color.white;
-                light5.color = Color.white;
-                light6.color = Color.white;
-                light7.color = Color.white;
                 changeLights = false;
             } else {
-                light1.color = Color.blue;
-                light2.color = Color.blue;
-                light3.color = Color.blue;
-                light4.color = Color.blue;
-                light5.color = Color.blue;
-                light6.color = Color.blue;
-                light7.color = Color.blue;
+                light1.color = Color.green;
+                light2.color = Color.green;
+                light3.color = Color.green;
+                light4.color = Color.green;
                 changeLights = true;
             }
             isTilted = false;
